@@ -13,6 +13,5 @@ def encode_who(w):
     else:
         raise TypeError(w.__class__.__name__ + ' is not JSON serializable')
 
-
 some_man = Who('John Doe', 42)
 print(json.dumps(some_man, default=encode_who))
