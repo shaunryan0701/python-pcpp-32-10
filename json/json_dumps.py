@@ -15,3 +15,5 @@ def encode_who(w):
 
 some_man = Who('John Doe', 42)
 print(json.dumps(some_man, default=encode_who))
+
+encode_who()
